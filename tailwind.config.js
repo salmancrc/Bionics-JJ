@@ -1,3 +1,5 @@
+import defaultTheme from 'tailwindcss/defaultTheme';
+
 export default {
 	content: [
 		"./index.html",
@@ -5,6 +7,9 @@ export default {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				sans: ['"Segoe UI"', ...defaultTheme.fontFamily.sans],
+			},
 		},
 	},
 	plugins: [],
