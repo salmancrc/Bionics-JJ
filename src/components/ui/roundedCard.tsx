@@ -1,6 +1,6 @@
 
 interface CardTypes extends React.HTMLAttributes<HTMLDivElement> {
-  children: any;
+  children: React.ReactNode;
 };
 
 

@@ -18,7 +18,7 @@ export const Input = ({ label, value, onChange, error, type = 'text' }: InputPro
         onChange={(e) => onChange(e.target.value)}
         type={type}
         placeholder={!label ? 'Enter value' : undefined}
-        className={`border px-2 py-1 w-full ${error ? 'border-red-500' : 'border-gray-300'}`}
+        className={`border border-gray-100 outline-0 px-2 rounded-sm py-1 w-full ${error ? 'border-red-500' : 'border-gray-100'}`}
       />
       {error && <p className="text-xs text-red-500">{error}</p>}
     </div>
