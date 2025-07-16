@@ -119,14 +119,8 @@ const columns: ColumnsType<Case> = [
 
 const data: Case[] = [
   { id: 'CS-32745-5089', sentiment: 'Normal', customer: 'SSS Australia', caseType: 'Invoice Discrepancy', subType: 'Wrong Order Number', caseCategory: 'Unrelated Query', caseStatus: 'In Progress', priority: 'Low' },
-  { id: 'CS-37637-2983', sentiment: 'Normal', customer: 'Southern Cross HC HAM', caseType: 'Invoice Discrepancy', subType: 'Wrong Order Number', caseCategory: 'Closed Transaction', caseStatus: 'Awaiting Response', priority: 'High' },
   { id: 'CS-30422-7892', sentiment: 'Unhappy', customer: 'Kalgoorlie Health Campus', caseType: 'Invoice Discrepancy', subType: 'Wrong Order Number', caseCategory: 'Closed Transaction', caseStatus: 'Awaiting Response', priority: 'Medium' },
   { id: 'CS-35941-6296', sentiment: 'Aggravated', customer: 'St John of God Ballarat', caseType: 'Invoice Discrepancy', subType: 'Wrong Order Number', caseCategory: 'Unrelated Query', caseStatus: 'In Progress', priority: 'High' },
-  { id: 'CS-33237-8176', sentiment: 'Unhappy', customer: 'Sydney Southwest Private', caseType: 'Invoice Discrepancy', subType: 'Wrong Order Number', caseCategory: 'Unrelated Query', caseStatus: 'Awaiting Response', priority: 'Low' },
-  { id: 'CS-30590-6775', sentiment: 'Unhappy', customer: 'SSS Australia', caseType: 'Invoice Discrepancy', subType: 'Wrong Order Number', caseCategory: 'Closed Transaction', caseStatus: 'In Progress', priority: 'Low' },
-  { id: 'CS-38950-7428', sentiment: 'Aggravated', customer: 'Kalgoorlie Health Campus', caseType: 'Invoice Discrepancy', subType: 'Wrong Order Number', caseCategory: 'Unrelated Query', caseStatus: 'In Progress', priority: 'Low' },
-  { id: 'CS-30590-6776', sentiment: 'Normal', customer: 'SSS Australia', caseType: 'Invoice Discrepancy', subType: 'Wrong Order Number', caseCategory: 'Closed Transaction', caseStatus: 'In Progress', priority: 'Low' },
-  { id: 'CS-30422-7893', sentiment: 'Unhappy', customer: 'Kalgoorlie Health Campus', caseType: 'Invoice Discrepancy', subType: 'Wrong Order Number', caseCategory: 'Unrelated Query', caseStatus: 'Awaiting Response', priority: 'Medium' },
 ];
 
 const CaseTable = () => (
