@@ -1,4 +1,4 @@
-type InputProps = {
+interface InputProps {
   label?: string;
   value: string;
   onChange: (v: string) => void;

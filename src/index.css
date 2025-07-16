@@ -48,6 +48,18 @@ body {
 @theme {
   --color-blue-500: #0f6cbd;
   --color-gray-500: #242424;
+  --color-gray-200: #616161;
   --color-gray-100: #D1D1D1;
+  --color-purple-200: #c9b2db;
+  --color-purple-100: #F4E5FF;
+  --color-green-500: #13A10E;
+  --color-green-100: #9FD89F;
+  --color-orange-500: #8A3707;
+  --color-orange-100: #FDCFB4;
+  --color-red-500: #B10E1C;
+  --color-red-100: #EEACB2;
 }
 
+.ant-table-column-sorter {
+  display: none !important;
+}
