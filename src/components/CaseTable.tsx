@@ -1,5 +1,6 @@
 import React from 'react';
-import { Table, Tag } from 'antd';
+import { Tag } from 'antd';
+import DataTable from './ui/table';
 import type { ColumnsType } from 'antd/es/table';
 import { FaRegSmile, FaRegFrown, FaRegAngry, FaArrowUp, FaArrowDown } from 'react-icons/fa';
 import StarsIcon from '../assets/icons/stars-icon.svg?react';
@@ -127,7 +128,7 @@ const data: Case[] = [
 
 const CaseTable = () => (
   <div className="overflow-x-auto">
-    <Table
+    <DataTable
       columns={columns}
       dataSource={data}
       rowKey={row => row.id}
