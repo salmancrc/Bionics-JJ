@@ -63,3 +63,18 @@ body {
 .ant-table-column-sorter {
   display: none !important;
 }
+
+.ant-table-tbody > tr:last-child > td {
+  border-bottom: none !important;
+}
+
+.ant-table-thead > tr > th {
+  background: #fff !important;
+  border-right: none !important;
+}
+
+.ant-table-thead > tr > th,
+.ant-table-thead > tr > th::before,
+.ant-table-thead > tr > th::after {
+  content: none !important;
+}

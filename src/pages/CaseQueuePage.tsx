@@ -20,7 +20,7 @@ const CaseQueuePage = () => (
       />
     </div>
 
-    <div className='py-6'>
+    <div className='pt-6 '>
       <CaseQueueTable />
     </div>
     {/* 
