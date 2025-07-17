@@ -27,14 +27,16 @@ const priorityMap: Record<Case['priority'], { color: string }> = {
   High: { color: 'red' },
 };
 
-const sorterTitle = (label: string) => ({ sortOrder }: { sortOrder?: 'ascend' | 'descend' }) => (
-  <span className='flex items-center'>
-    {label}
-    {sortOrder === 'ascend' && <span className="ml-2"><FaArrowUp className="text-gray-200 text-xs" /></span>}
-    {sortOrder === 'descend' && <span className="ml-2"><FaArrowDown className="text-gray-200 text-xs" /></span>}
-    {!sortOrder && <span className="ml-2 text-gray-300"><FaArrowDown className="text-xs text-gray-400" style={{ transform: 'rotate(180deg)' }} /></span>}
-  </span>
-);
+function sorterTitle(label: string) {
+  return ({ sortOrder }: { sortOrder?: 'ascend' | 'descend' }) => (
+    <span className='flex items-center'>
+      {label}
+      {sortOrder === 'ascend' && <span className="ml-2"><FaArrowUp className="text-gray-200 text-xs" /></span>}
+      {sortOrder === 'descend' && <span className="ml-2"><FaArrowDown className="text-gray-200 text-xs" /></span>}
+      {!sortOrder && <span className="ml-2 text-gray-300"><FaArrowDown className="text-xs text-gray-400" style={{ transform: 'rotate(180deg)' }} /></span>}
+    </span>
+  );
+}
 
 const columns: ColumnsType<Case> = [
   {
@@ -53,7 +55,7 @@ const columns: ColumnsType<Case> = [
       return (
         <span className='inline-flex items-center gap-1 p-1 bg-purple-100 rounded-sm border border-purple-200'>
           <span className='p-1'>
-          <StarsIcon />
+            <StarsIcon />
           </span>
           <Tag
             color={s.color}
