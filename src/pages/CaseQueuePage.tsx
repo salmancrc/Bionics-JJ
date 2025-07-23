@@ -3,10 +3,8 @@ import { Input } from '../components/ui/Input';
 import SearchBar from '../components/ui/search';
 import CaseQueueTable from '../components/CaseTable';
 import RoundedCard from '../components/ui/roundedCard';
+import FilterBadgeButton from '../components/ui/FilterBadgeButton';
 import CardIcon from '../assets/icons/card-icon.svg?react';
-import FilterIcon from '../assets/icons/filter-icon.svg?react';
-
-const filterCount = 2;
 
 const CaseQueuePage = () => (
   <RoundedCard className="p-4 m-4">
@@ -27,15 +25,12 @@ const CaseQueuePage = () => (
           <button type="button" aria-label="Card View" className='cursor-pointer'>
             <CardIcon />
           </button>
-          <button type="button" aria-label={`Filter (${filterCount})`} className="relative cursor-pointer">
-            <FilterIcon className="" />
-            <span
-              className="absolute -top-1.5 -right-1.5 flex items-center justify-center w-4 h-4 rounded-full bg-blue-500 text-white text-[8px]"
-              aria-hidden="true"
-            >
-              {filterCount}
-            </span>
-          </button>
+          <FilterBadgeButton
+            count={0}
+            onClick={() => {
+              console.log('Filter button clicked');
+            }}
+          />
         </span>
       </div>
     </div>
