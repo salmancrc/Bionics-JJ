@@ -26,7 +26,7 @@ const CaseQueuePage = () => (
             <CardIcon />
           </button>
           <FilterBadgeButton
-            count={0}
+            count={2}
             onClick={() => {
               console.log('Filter button clicked');
             }}
